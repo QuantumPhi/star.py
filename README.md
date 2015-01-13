@@ -8,6 +8,6 @@ unstar [options] [user]/[repo]
 
 options:
 -a, --all => unstar all repositories
--b, --backup => back up starred repositories (~/.unstar)
+-b, --backup => back up starred repositories (~/.unstar/backup)
 -s, --status => check if repository is starred
 ```
