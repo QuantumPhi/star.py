@@ -1,3 +1,4 @@
+from os.path import expanduser
 from setuptools import setup
 
 setup(
@@ -13,5 +14,8 @@ setup(
     zip_safe=True
 )
 
+"""
 secret = input("Client secret: ")
-file = open('')
+f = open(expanduser("~")+"/.unstar/client_secret", "w+")
+print(secret, file = f)
+"""
