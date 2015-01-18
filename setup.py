@@ -14,6 +14,7 @@ setup(
     zip_safe=True
 )
 
+# TODO: Client secret
 """
 secret = input("Client secret: ")
 f = open(expanduser("~")+"/.unstar/client_secret", "w+")
