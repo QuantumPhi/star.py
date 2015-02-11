@@ -62,11 +62,5 @@ def toggle(token, user, repo):
 
 token = authorize()
 parser = ArgumentParser()
-parser.add_argument("repository", metavar="REPO", type=string, nargs="+", help="USER/REPO")
-parser.add_argument("-s", "--star", dest="star", action="star_repo", const=star, default=toggle, help="star repository")
-if len(argv) != 2:
-    parser.print_help()
-else:
-    arg = argv[1].split("/")
-    user, repo = arg[0], arg[1]
-    toggle(token, user, repo)
+parser.add_argument("repository", metavar="REPO", nargs="+", help="USER/REPO")
+parser.add_argument("-s", "--star", dest="star", default=toggle, help="star repository")
